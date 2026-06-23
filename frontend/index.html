@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentCloud - Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            🎓 StudentCloud
+        </div>
+
+        <h1>Student Management System</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Add Student -->
+        <section class="card">
+
+            <h2>Add Student</h2>
+
+            <div class="form-grid">
+
+                <input type="text" id="studentId" placeholder="Student ID">
+
+                <input type="text" id="name" placeholder="Student Name">
+
+                <input type="email" id="email" placeholder="Email">
+
+                <input type="text" id="phone" placeholder="Phone">
+
+                <input type="text" id="department" placeholder="Department">
+
+                <input type="text" id="year" placeholder="Year">
+
+                <input type="text" id="address" placeholder="Address">
+
+            </div>
+
+            <button onclick="addStudent()">
+                Save Student
+            </button>
+
+        </section>
+
+        <!-- Search -->
+        <section class="card">
+
+            <h2>Search Student</h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by Name or ID"
+                onkeyup="searchStudent()">
+
+        </section>
+
+        <!-- Table -->
+        <section class="card">
+
+            <h2>Student Records</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
